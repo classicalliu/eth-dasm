@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "eth/dasm"
+require "eth_dasm"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

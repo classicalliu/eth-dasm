@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "eth/dasm/version"
+require "eth_dasm/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "eth-dasm"
-  spec.version       = Eth::Dasm::VERSION
+  spec.version       = EthDasm::VERSION
   spec.authors       = ["classicalliu"]
   spec.email         = ["classicalliu@gmail.com"]
 
