@@ -1,5 +1,7 @@
 # EthDasm
 
+[![Build Status](https://travis-ci.org/classicalliu/eth-dasm.svg?branch=master)](https://travis-ci.org/classicalliu/eth-dasm)
+
 EVM disassembler in ruby language.
 
 ## Installation
