@@ -1,15 +1,13 @@
-# Eth::Dasm
+# EthDasm
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/eth/dasm`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+EVM disassembler in ruby language.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'eth-dasm'
+gem 'eth-dasm', github: 'classicalliu/eth-dasm'
 ```
 
 And then execute:
@@ -22,7 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+# mode can be :int, :hex or :"int:hex", default is :"int:hex"
+EthDasm::Byte2op.decode(code, mode = :"int:hex")
+# example
+EthDasm::Byte2op.decode("0x...", :"int:hex")
+```
 
 ## Development
 
@@ -32,7 +35,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/eth-dasm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/classicalliu/eth-dasm. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
@@ -40,4 +43,4 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 ## Code of Conduct
 
-Everyone interacting in the Eth::Dasm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/eth-dasm/blob/master/CODE_OF_CONDUCT.md).
+Everyone interacting in the EthDasm project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/classicalliu/eth-dasm/blob/master/CODE_OF_CONDUCT.md).
